@@ -16,6 +16,10 @@ from dotenv import load_dotenv
 
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://nextyou-production-9165.up.railway.app"
+]
+
 print("ALLOWED_HOSTS LOADED:", ALLOWED_HOSTS)
 
 load_dotenv()
