@@ -1,0 +1,17 @@
+{% extends "simulator/base.html" %}
+
+{% block content %}
+<h1>What if one decision actually changed everything?</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    
+    <input type="number" name="age" placeholder="Your age" required>
+    
+    <textarea name="work" placeholder="Your current situation" required></textarea>
+    
+    <textarea name="goal" placeholder="What do you want to change?" required></textarea>
+
+    <button type="submit">See my future</button>
+</form>
+{% endblock %}
